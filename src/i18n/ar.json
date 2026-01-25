@@ -1,0 +1,103 @@
+{
+    "common": {
+        "appName": "مكتب",
+        "appTagline": "إدارة التحفيظ والإسلامية",
+        "getStarted": "ابدأ الآن",
+        "next": "التالي",
+        "skip": "تخطي",
+        "login": "تسجيل الدخول",
+        "register": "تسجيل",
+        "continue": "متابعة",
+        "cancel": "إلغاء",
+        "save": "حفظ",
+        "delete": "حذف",
+        "edit": "تعديل",
+        "back": "رجوع",
+        "loading": "جاري التحميل...",
+        "error": "خطأ",
+        "success": "نجاح",
+        "startUsingApp": "ابدأ استخدام التطبيق"
+    },
+    "languages": {
+        "english": "الإنجليزية",
+        "arabic": "العربية",
+        "hausa": "الهوسا",
+        "eng": "إنج",
+        "ar": "عر",
+        "hau": "هو"
+    },
+    "onboarding": {
+        "slide1": {
+            "title": "رقمنة مدرستك الإسلامية",
+            "description": "إدارة سهلة للحضور والسجلات وبيانات الطلاب في مكان واحد آمن."
+        },
+        "slide2": {
+            "title": "دعم التحفيظ والمراجعة",
+            "description": "دعم رحلة حفظ القرآن الكريم مع جدولة المراجعات وتقييمات التجويد."
+        },
+        "slide3": {
+            "title": "التعلم التفاعلي والتغذية الراجعة",
+            "description": "تبادل الملاحظات الصوتية والتغذية الراجعة الصوتية لتلاوة القرآن والحديث ودروس اللغة العربية."
+        }
+    },
+    "roleSelection": {
+        "greeting": "السلام عليكم",
+        "selectRole": "الرجاء اختيار دورك للمتابعة.",
+        "welcomeBack": "مرحباً بعودتك! الرجاء إدخال بياناتك.",
+        "student": {
+            "title": "طالب",
+            "description": "الوصول إلى الدروس وتقدم القرآن والنتائج"
+        },
+        "teacher": {
+            "title": "معلم",
+            "description": "إدارة الفصول والحضور والدرجات"
+        },
+        "management": {
+            "title": "الإدارة",
+            "description": "لوحة التحكم والسجلات والتقارير"
+        }
+    },
+    "auth": {
+        "emailOrPhone": "البريد الإلكتروني أو رقم الهاتف",
+        "emailOrPhonePlaceholder": "أدخل بريدك الإلكتروني أو هاتفك",
+        "password": "كلمة المرور",
+        "passwordPlaceholder": "أدخل كلمة المرور",
+        "forgotPassword": "نسيت كلمة المرور؟",
+        "orContinueWith": "أو تابع مع",
+        "noAccount": "ليس لديك حساب؟",
+        "createAccount": "إنشاء حساب",
+        "hasAccount": "لديك حساب بالفعل؟",
+        "google": "جوجل",
+        "apple": "أبل"
+    },
+    "dashboard": {
+        "greeting": "السلام عليكم،",
+        "tahfeezProgress": "تقدم التحفيظ",
+        "onTrack": "على المسار",
+        "behind": "متأخر",
+        "ahead": "متقدم",
+        "currentGoal": "الهدف الحالي",
+        "lastRecited": "آخر تلاوة:",
+        "continue": "متابعة",
+        "quickActions": "إجراءات سريعة",
+        "logPractice": "تسجيل التمرين",
+        "timetable": "الجدول",
+        "joinClass": "الانضمام للفصل",
+        "qibla": "القبلة",
+        "upcomingMuraja": "المراجعة القادمة",
+        "viewAll": "عرض الكل",
+        "assignments": "الواجبات",
+        "recentFeedback": "التغذية الراجعة الأخيرة",
+        "playAudioNote": "تشغيل الملاحظة الصوتية",
+        "tomorrow": "غداً",
+        "today": "اليوم",
+        "revisionDue": "موعد المراجعة"
+    },
+    "surah": {
+        "juz": "جزء",
+        "ayah": "آية"
+    },
+    "footer": {
+        "version": "تطبيق مكتب للتحفيظ والإسلامية الإصدار 1.0"
+    }
+}

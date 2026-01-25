@@ -1,0 +1,392 @@
+.quran-page {
+    min-height: 100vh;
+    background-color: var(--color-gray-50);
+    padding-bottom: 80px;
+}
+
+/* Header */
+.quran-header {
+    background: var(--gradient-header);
+    padding: var(--space-4) var(--space-5);
+    padding-bottom: var(--space-6);
+}
+
+.quran-header .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-4);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.user-avatar-small {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-secondary-dark);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.header-text {
+    color: var(--color-white);
+}
+
+.header-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+}
+
+.header-subtitle {
+    font-size: var(--font-size-sm);
+    opacity: 0.8;
+}
+
+.settings-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: var(--radius-lg);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+/* Search Bar */
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: var(--space-4);
+    color: var(--color-gray-400);
+}
+
+.search-input {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    padding-left: calc(var(--space-4) + 24px);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-base);
+    color: var(--color-white);
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.search-input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Content */
+.quran-content {
+    padding: var(--space-4) var(--space-5);
+    margin-top: calc(-1 * var(--space-3));
+}
+
+/* Continue Reading Card */
+.continue-card {
+    margin-bottom: var(--space-4);
+    position: relative;
+    overflow: hidden;
+}
+
+.continue-card::before {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-secondary);
+    opacity: 0.1;
+    border-radius: var(--radius-full);
+}
+
+.continue-badge {
+    display: inline-block;
+    padding: var(--space-1) var(--space-3);
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--color-success);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-3);
+}
+
+.continue-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--space-4);
+}
+
+.continue-info {
+    flex: 1;
+}
+
+.surah-name {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-gray-800);
+    margin-bottom: var(--space-1);
+}
+
+.surah-details {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-500);
+}
+
+.surah-arabic {
+    font-family: var(--font-arabic);
+    font-size: var(--font-size-xl);
+    color: var(--color-gray-400);
+    text-align: right;
+}
+
+/* Progress Row */
+.progress-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.play-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: var(--radius-full);
+    color: var(--color-white);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.progress-info {
+    flex: 1;
+}
+
+.progress-current {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-1);
+    display: block;
+}
+
+.progress-bar-container {
+    height: 6px;
+    background-color: var(--color-gray-200);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--color-primary);
+    border-radius: var(--radius-full);
+    transition: width var(--transition-slow);
+}
+
+.progress-total {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-400);
+    white-space: nowrap;
+}
+
+/* Muraja'a Row */
+.muraja-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+    margin-bottom: var(--space-5);
+}
+
+.muraja-status-card {
+    padding: var(--space-3) !important;
+}
+
+.muraja-status-card.due {
+    background: linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 100%);
+}
+
+.muraja-status-card.on-track {
+    background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+}
+
+.muraja-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-2);
+}
+
+.muraja-icon {
+    font-size: 18px;
+}
+
+.muraja-badge {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-full);
+}
+
+.muraja-badge.due {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--color-error);
+}
+
+.muraja-badge.on-track {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--color-success);
+}
+
+.muraja-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-500);
+    margin-bottom: var(--space-1);
+}
+
+.muraja-juz {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-gray-800);
+}
+
+/* Tabs */
+.surah-tabs {
+    display: flex;
+    gap: var(--space-4);
+    border-bottom: 2px solid var(--color-gray-200);
+    margin-bottom: var(--space-4);
+}
+
+.surah-tab {
+    padding: var(--space-3) var(--space-1);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-500);
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.surah-tab:hover {
+    color: var(--color-gray-700);
+}
+
+.surah-tab.active {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
+/* Surah List */
+.surah-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.surah-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.surah-number {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-gray-100);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-600);
+    flex-shrink: 0;
+}
+
+.surah-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.surah-title {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-800);
+    margin-bottom: var(--space-1);
+}
+
+.surah-meta {
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-500);
+}
+
+.surah-progress-bar {
+    height: 4px;
+    background-color: var(--color-gray-200);
+    border-radius: var(--radius-full);
+    margin-top: var(--space-2);
+    overflow: hidden;
+}
+
+.surah-progress {
+    height: 100%;
+    background-color: var(--color-primary);
+    border-radius: var(--radius-full);
+}
+
+.surah-right {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.surah-arabic-name {
+    font-family: var(--font-arabic);
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-700);
+    margin-bottom: var(--space-1);
+}
+
+.status-completed {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: var(--color-success);
+    color: var(--color-white);
+    border-radius: var(--radius-full);
+}
+
+.status-progress {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-primary);
+}

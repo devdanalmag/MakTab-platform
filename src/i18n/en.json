@@ -1,0 +1,103 @@
+{
+    "common": {
+        "appName": "MakTab",
+        "appTagline": "Tahfeez & Islamiyya Management",
+        "getStarted": "Get Started",
+        "next": "Next",
+        "skip": "Skip",
+        "login": "Log In",
+        "register": "Register",
+        "continue": "Continue",
+        "cancel": "Cancel",
+        "save": "Save",
+        "delete": "Delete",
+        "edit": "Edit",
+        "back": "Back",
+        "loading": "Loading...",
+        "error": "Error",
+        "success": "Success",
+        "startUsingApp": "Start Using App"
+    },
+    "languages": {
+        "english": "English",
+        "arabic": "Arabic",
+        "hausa": "Hausa",
+        "eng": "Eng",
+        "ar": "Ar",
+        "hau": "Hau"
+    },
+    "onboarding": {
+        "slide1": {
+            "title": "Digitalize Your Madrasah",
+            "description": "Effortlessly manage attendance, records, and student data in one secure place."
+        },
+        "slide2": {
+            "title": "Tahfeez & Muraja'a Support",
+            "description": "Support your Qur'an memorization journey with scheduled revisions and Tajweed evaluations."
+        },
+        "slide3": {
+            "title": "Interactive Learning & Feedback",
+            "description": "Voice note exchange and audio-based feedback for Qur'an recitation, Hadith, and Arabic lessons."
+        }
+    },
+    "roleSelection": {
+        "greeting": "Assalamu Alaikum",
+        "selectRole": "Please select your role to continue.",
+        "welcomeBack": "Welcome back! Please enter your details.",
+        "student": {
+            "title": "Student",
+            "description": "Access lessons, Qur'an progress & results"
+        },
+        "teacher": {
+            "title": "Teacher",
+            "description": "Manage classes, attendance & grading"
+        },
+        "management": {
+            "title": "Management",
+            "description": "Admin dashboard, record & report"
+        }
+    },
+    "auth": {
+        "emailOrPhone": "Email or Phone Number",
+        "emailOrPhonePlaceholder": "Enter your email or phone",
+        "password": "Password",
+        "passwordPlaceholder": "Enter your password",
+        "forgotPassword": "Forgot Password?",
+        "orContinueWith": "OR CONTINUE WITH",
+        "noAccount": "Don't have an account?",
+        "createAccount": "Create Account",
+        "hasAccount": "Already have an account?",
+        "google": "Google",
+        "apple": "Apple"
+    },
+    "dashboard": {
+        "greeting": "Assalamu Alaikum,",
+        "tahfeezProgress": "Tahfeez Progress",
+        "onTrack": "On Track",
+        "behind": "Behind",
+        "ahead": "Ahead",
+        "currentGoal": "CURRENT GOAL",
+        "lastRecited": "Last Recited:",
+        "continue": "Continue",
+        "quickActions": "Quick Actions",
+        "logPractice": "Log Practice",
+        "timetable": "Timetable",
+        "joinClass": "Join Class",
+        "qibla": "Qibla",
+        "upcomingMuraja": "Upcoming Muraja'a",
+        "viewAll": "View All",
+        "assignments": "Assignments",
+        "recentFeedback": "Recent Feedback",
+        "playAudioNote": "Play Audio Note",
+        "tomorrow": "Tomorrow",
+        "today": "Today",
+        "revisionDue": "Revision due by"
+    },
+    "surah": {
+        "juz": "Juz",
+        "ayah": "Ayah"
+    },
+    "footer": {
+        "version": "MakTab Tahfeez & Islamiyya App v1.0"
+    }
+}

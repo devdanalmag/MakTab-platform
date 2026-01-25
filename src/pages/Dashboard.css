@@ -1,0 +1,447 @@
+.dashboard-page {
+    min-height: 100vh;
+    background-color: var(--color-gray-50);
+    padding-bottom: 80px;
+}
+
+/* Header */
+.dashboard-header {
+    background: var(--gradient-header);
+    padding: var(--space-4) var(--space-5);
+    padding-bottom: var(--space-6);
+    border-radius: 0 0 var(--radius-2xl) var(--radius-2xl);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-4);
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: var(--space-2);
+}
+
+.menu-line {
+    width: 22px;
+    height: 2px;
+    background-color: var(--color-white);
+    border-radius: var(--radius-full);
+}
+
+.menu-line:first-child {
+    width: 16px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.header-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: var(--radius-lg);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+}
+
+.header-btn:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.avatar-btn {
+    background-color: var(--color-white);
+    color: var(--color-secondary);
+}
+
+.greeting-row {
+    margin-bottom: var(--space-3);
+}
+
+.greeting-label {
+    font-size: var(--font-size-sm);
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: var(--space-1);
+}
+
+.user-name {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+}
+
+.date-row {
+    display: flex;
+    gap: var(--space-4);
+}
+
+.date-badge {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-sm);
+    color: var(--color-white);
+}
+
+/* Main Content */
+.dashboard-content {
+    padding: var(--space-4) var(--space-5);
+    margin-top: calc(-1 * var(--space-3));
+}
+
+/* Tahfeez Card */
+.tahfeez-card {
+    margin-bottom: var(--space-5);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-4);
+}
+
+.card-title-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.card-icon {
+    color: var(--color-secondary);
+}
+
+.card-title {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-800);
+}
+
+.status-badge {
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    text-transform: capitalize;
+}
+
+.status-badge.on-track {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--color-success);
+}
+
+.tahfeez-content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
+}
+
+.tahfeez-info {
+    flex: 1;
+}
+
+.goal-label {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-1);
+}
+
+.goal-title {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-800);
+    margin-bottom: var(--space-1);
+}
+
+.goal-subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--color-secondary);
+}
+
+.tahfeez-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--color-gray-100);
+}
+
+.last-recited {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-500);
+}
+
+.continue-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: gap var(--transition-fast);
+}
+
+.continue-btn:hover {
+    gap: var(--space-3);
+}
+
+/* Sections */
+.section {
+    margin-bottom: var(--space-5);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+}
+
+.section-title {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-800);
+}
+
+.view-all-btn {
+    font-size: var(--font-size-sm);
+    color: var(--color-primary);
+    font-weight: var(--font-weight-medium);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Quick Actions */
+.quick-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-3);
+}
+
+.quick-action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform var(--transition-fast);
+}
+
+.quick-action-btn:hover {
+    transform: scale(1.05);
+}
+
+.action-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-lg);
+}
+
+.action-label {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-600);
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* Muraja Cards */
+.muraja-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.muraja-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.muraja-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-secondary);
+    border-radius: var(--radius-lg);
+    color: var(--color-white);
+    flex-shrink: 0;
+}
+
+.muraja-content {
+    flex: 1;
+}
+
+.muraja-title {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-800);
+    margin-bottom: var(--space-1);
+}
+
+.muraja-due {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-500);
+}
+
+/* Assignment Cards */
+.assignments-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.assignment-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.assignment-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(59, 130, 246, 0.1);
+    border-radius: var(--radius-lg);
+    color: var(--color-primary);
+    flex-shrink: 0;
+}
+
+.assignment-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.assignment-title {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-800);
+    margin-bottom: var(--space-1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.assignment-desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-500);
+}
+
+.assignment-due {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-warning);
+    white-space: nowrap;
+}
+
+/* Feedback Cards */
+.feedback-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.feedback-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.feedback-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.teacher-avatar {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-secondary);
+    border-radius: var(--radius-full);
+    color: var(--color-white);
+}
+
+.teacher-info {
+    flex: 1;
+}
+
+.teacher-name {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-800);
+}
+
+.feedback-time {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-400);
+}
+
+.feedback-message {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    line-height: var(--line-height-relaxed);
+    font-style: italic;
+}
+
+.audio-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    background-color: var(--color-gray-100);
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+    width: fit-content;
+}
+
+.audio-btn:hover {
+    background-color: var(--color-gray-200);
+}
+
+/* Responsive */
+@media (max-width: 360px) {
+    .quick-actions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

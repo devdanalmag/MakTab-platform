@@ -1,0 +1,103 @@
+{
+    "common": {
+        "appName": "MakTab",
+        "appTagline": "Gudanar da Tahfeez & Islamiyya",
+        "getStarted": "Fara Yanzu",
+        "next": "Gaba",
+        "skip": "Tsallake",
+        "login": "Shiga",
+        "register": "Yi Rajista",
+        "continue": "Ci gaba",
+        "cancel": "Soke",
+        "save": "Ajiye",
+        "delete": "Share",
+        "edit": "Gyara",
+        "back": "Baya",
+        "loading": "Ana lodi...",
+        "error": "Kuskure",
+        "success": "Nasara",
+        "startUsingApp": "Fara Amfani da App"
+    },
+    "languages": {
+        "english": "Turanci",
+        "arabic": "Larabci",
+        "hausa": "Hausa",
+        "eng": "Tur",
+        "ar": "Lar",
+        "hau": "Hau"
+    },
+    "onboarding": {
+        "slide1": {
+            "title": "Dijital Makarantarka",
+            "description": "Sauƙaƙe gudanar da zuwa, rikodin, da bayanan ɗalibai a wuri ɗaya mai tsaro."
+        },
+        "slide2": {
+            "title": "Tallafin Tahfeez & Muraja'a",
+            "description": "Tallafa wa tafiyar haddace Alqur'ani tare da shirya muraja'a da ƙimar Tajweed."
+        },
+        "slide3": {
+            "title": "Koyo Mai Hulɗa & Amsa",
+            "description": "Musayar saƙon murya da amsa ta murya don karanta Alqur'ani, Hadisi, da darusan Larabci."
+        }
+    },
+    "roleSelection": {
+        "greeting": "Assalamu Alaikum",
+        "selectRole": "Da fatan za a zaɓi matsayinka don ci gaba.",
+        "welcomeBack": "Barka da dawo! Da fatan za a shigar da bayananku.",
+        "student": {
+            "title": "Ɗalibi",
+            "description": "Samun damar darasi, ci gaban Alqur'ani & sakamako"
+        },
+        "teacher": {
+            "title": "Malami",
+            "description": "Gudanar da azuzuwa, zuwa & maki"
+        },
+        "management": {
+            "title": "Gudanarwa",
+            "description": "Shafin gudanarwa, rikodi & rahoto"
+        }
+    },
+    "auth": {
+        "emailOrPhone": "Imel ko Lambar Waya",
+        "emailOrPhonePlaceholder": "Shigar da imel ko waya",
+        "password": "Kalmar sirri",
+        "passwordPlaceholder": "Shigar da kalmar sirri",
+        "forgotPassword": "Manta Kalmar sirri?",
+        "orContinueWith": "KO CI GABA DA",
+        "noAccount": "Ba ka da asusu?",
+        "createAccount": "Ƙirƙiri Asusu",
+        "hasAccount": "Riga kana da asusu?",
+        "google": "Google",
+        "apple": "Apple"
+    },
+    "dashboard": {
+        "greeting": "Assalamu Alaikum,",
+        "tahfeezProgress": "Ci gaban Tahfeez",
+        "onTrack": "Akan Hanya",
+        "behind": "Baya",
+        "ahead": "Gaba",
+        "currentGoal": "BURIN YANZU",
+        "lastRecited": "Karatun ƙarshe:",
+        "continue": "Ci gaba",
+        "quickActions": "Ayyuka Masu Sauri",
+        "logPractice": "Shigar da Aiki",
+        "timetable": "Jadawalin Lokaci",
+        "joinClass": "Shiga Aji",
+        "qibla": "Alƙibla",
+        "upcomingMuraja": "Muraja'a Mai Zuwa",
+        "viewAll": "Duba Duka",
+        "assignments": "Ayyukan Gida",
+        "recentFeedback": "Amsa Na Baya-bayan nan",
+        "playAudioNote": "Kunna Saƙon Murya",
+        "tomorrow": "Gobe",
+        "today": "Yau",
+        "revisionDue": "Muraja'a ta isa"
+    },
+    "surah": {
+        "juz": "Juz'i",
+        "ayah": "Aya"
+    },
+    "footer": {
+        "version": "MakTab Tahfeez & Islamiyya App v1.0"
+    }
+}

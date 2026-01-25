@@ -1,0 +1,298 @@
+.profile-page {
+    min-height: 100vh;
+    background-color: var(--color-gray-50);
+    padding-bottom: 100px;
+}
+
+/* Header */
+.profile-header {
+    background: var(--gradient-header);
+    padding: var(--space-4) var(--space-5);
+    padding-bottom: var(--space-8);
+}
+
+.profile-header .header-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-5);
+}
+
+.profile-header .back-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.profile-header .header-title {
+    flex: 1;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.edit-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: var(--radius-lg);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-gray-300);
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-3);
+    color: var(--color-white);
+}
+
+.profile-name {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+    margin-bottom: var(--space-1);
+}
+
+.profile-id {
+    font-size: var(--font-size-sm);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Stats Bar */
+.stats-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    margin: calc(-1 * var(--space-5)) var(--space-5) var(--space-4);
+    padding: var(--space-4);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-card);
+}
+
+.stat-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.stat-label {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-500);
+    letter-spacing: 0.05em;
+}
+
+.stat-value {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-gray-800);
+}
+
+.stat-value.primary {
+    color: var(--color-primary);
+}
+
+.stat-divider {
+    width: 1px;
+    height: 32px;
+    background-color: var(--color-gray-200);
+}
+
+/* Content */
+.profile-content {
+    padding: 0 var(--space-5);
+}
+
+/* Section */
+.section {
+    margin-bottom: var(--space-5);
+}
+
+.section-title {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-500);
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-3);
+}
+
+/* Info Card */
+.info-card {
+    overflow: hidden;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+
+.info-item.with-border {
+    border-bottom: 1px solid var(--color-gray-100);
+}
+
+.info-item.clickable {
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+}
+
+.info-item.clickable:hover {
+    background-color: var(--color-gray-50);
+}
+
+.info-icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    border-radius: var(--radius-md);
+    color: var(--color-white);
+    flex-shrink: 0;
+}
+
+.info-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.info-label {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-800);
+}
+
+.info-label.single {
+    flex: 1;
+}
+
+.info-value {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-500);
+}
+
+.info-action {
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+}
+
+.arrow-icon {
+    color: var(--color-gray-400);
+    flex-shrink: 0;
+}
+
+/* Toggle Switch */
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 26px;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-gray-300);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-fast);
+}
+
+.toggle-slider::before {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: var(--color-white);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-fast);
+    box-shadow: var(--shadow-sm);
+}
+
+.toggle input:checked+.toggle-slider {
+    background-color: var(--color-primary);
+}
+
+.toggle input:checked+.toggle-slider::before {
+    transform: translateX(22px);
+}
+
+/* Sign Out Button */
+.signout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    width: 100%;
+    padding: var(--space-4);
+    background-color: rgba(239, 68, 68, 0.1);
+    border: none;
+    border-radius: var(--radius-lg);
+    color: var(--color-error);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+    margin-bottom: var(--space-4);
+}
+
+.signout-btn:hover {
+    background-color: rgba(239, 68, 68, 0.15);
+}
+
+/* Version */
+.version-text {
+    text-align: center;
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-400);
+    margin-bottom: var(--space-4);
+}
