@@ -32,13 +32,26 @@ const Auth: React.FC = () => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         // In a real app, handle authentication here
-        navigate('/dashboard');
+        // Route based on role
+        if (role === 'teacher') {
+            navigate('/teacher/dashboard');
+        } else if (role === 'management') {
+            navigate('/management/setup');
+        } else {
+            navigate('/dashboard');
+        }
     };
 
     const handleSocialLogin = (provider: string) => {
         console.log(`Login with ${provider}`);
-        // Handle social login
-        navigate('/dashboard');
+        // Handle social login - route based on role
+        if (role === 'teacher') {
+            navigate('/teacher/dashboard');
+        } else if (role === 'management') {
+            navigate('/management/setup');
+        } else {
+            navigate('/dashboard');
+        }
     };
 
     return (

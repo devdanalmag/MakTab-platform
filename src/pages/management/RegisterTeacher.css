@@ -1,0 +1,181 @@
+.register-teacher-page {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #E8F4F8 0%, #FFFFFF 15%);
+}
+
+/* Header */
+.register-header {
+    display: flex;
+    align-items: center;
+    padding: var(--space-4) var(--space-5);
+    border-bottom: 1px solid var(--color-gray-100);
+}
+
+.register-header .back-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: var(--color-gray-600);
+    cursor: pointer;
+}
+
+.register-header .header-title {
+    flex: 1;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-gray-800);
+    text-align: center;
+}
+
+.register-header .header-spacer {
+    width: 36px;
+}
+
+/* Content */
+.register-content {
+    padding: var(--space-6) var(--space-5);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Photo Upload */
+.photo-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--space-6);
+}
+
+.photo-upload .upload-placeholder {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    border: 2px dashed var(--color-gray-300);
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-3);
+}
+
+.photo-upload .upload-icon {
+    color: var(--color-secondary);
+    opacity: 0.5;
+}
+
+.photo-upload .upload-text {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-500);
+}
+
+/* Form */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.register-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.register-form .form-label {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-600);
+    letter-spacing: 0.05em;
+}
+
+.register-form .input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.register-form .form-input {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    padding-right: calc(var(--space-4) + 24px);
+    background-color: var(--color-gray-100);
+    border: none;
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-base);
+    color: var(--color-gray-800);
+}
+
+.register-form .form-input::placeholder {
+    color: var(--color-gray-400);
+}
+
+.register-form .form-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-primary);
+}
+
+.register-form .input-icon {
+    position: absolute;
+    right: var(--space-4);
+    color: var(--color-gray-400);
+}
+
+/* Classes Grid */
+.classes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+}
+
+.class-checkbox {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-4);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.class-checkbox:hover {
+    border-color: var(--color-primary);
+}
+
+.class-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--color-primary);
+}
+
+.checkbox-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-700);
+}
+
+/* Generate Code Button */
+.generate-code-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.generate-code-btn:hover {
+    background-color: rgba(59, 130, 246, 0.05);
+}

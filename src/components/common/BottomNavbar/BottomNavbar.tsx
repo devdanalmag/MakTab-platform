@@ -1,11 +1,11 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Home, BookOpen, Users, User, Plus } from 'lucide-react';
+import { Home, BookOpen, Users, User, Plus, LucideIcon } from 'lucide-react';
 import './BottomNavbar.css';
 
 interface NavItem {
     id: string;
-    icon: React.FC<{ size?: number; className?: string }>;
+    icon: LucideIcon;
     label: string;
     route: string;
 }

@@ -72,6 +72,16 @@ const Classes: React.FC = () => {
             icon: '💬',
             color: '#A855F7',
         },
+        {
+            id: '4',
+            name: 'Arabic Language',
+            details: 'Intermediate Grammar (Nahw)',
+            schedule: 'Sat, Sun',
+            time: '11:00 AM',
+            status: 'none',
+            icon: '📚',
+            color: '#559bf7ff',
+        },
     ];
 
     return (

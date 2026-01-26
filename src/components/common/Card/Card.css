@@ -1,5 +1,5 @@
 .card {
-    background: var(--color-white);
+    /* background: var(--color-white); */
     border-radius: var(--radius-xl);
     transition: all var(--transition-fast);
 }
@@ -7,6 +7,7 @@
 /* Variants */
 .card-default {
     box-shadow: var(--shadow-card);
+    background: var(--color-white);
 }
 
 .card-elevated {

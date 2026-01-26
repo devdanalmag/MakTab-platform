@@ -1,0 +1,290 @@
+.management-students-page {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #E8F4F8 0%, #FFFFFF 10%);
+    padding-bottom: 100px;
+}
+
+/* Header */
+.students-header {
+    display: flex;
+    align-items: center;
+    padding: var(--space-4) var(--space-5);
+    background-color: transparent;
+}
+
+.students-header .back-btn,
+.students-header .more-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: var(--color-gray-600);
+    cursor: pointer;
+}
+
+.students-header .header-title {
+    flex: 1;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-gray-800);
+    text-align: center;
+}
+
+/* Content */
+.students-content {
+    padding: 0 var(--space-5);
+}
+
+/* Search */
+.students-content .search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-4);
+}
+
+.students-content .search-icon {
+    position: absolute;
+    left: var(--space-4);
+    color: var(--color-gray-400);
+}
+
+.students-content .search-input {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    padding-left: calc(var(--space-4) + 24px);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-base);
+    color: var(--color-gray-800);
+}
+
+.students-content .search-input::placeholder {
+    color: var(--color-gray-400);
+}
+
+.students-content .search-input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+/* Filter Tabs */
+.students-content .filter-tabs {
+    display: flex;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+    overflow-x: auto;
+    padding-bottom: var(--space-1);
+}
+
+.students-content .filter-tab {
+    padding: var(--space-2) var(--space-4);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-600);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.students-content .filter-tab.active {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* Stats Row */
+.students-content .stats-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+}
+
+.students-content .stat-card {
+    text-align: left;
+}
+
+.students-content .stat-label {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-500);
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-2);
+}
+
+.students-content .stat-value {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+}
+
+.students-content .stat-value.primary {
+    color: var(--color-primary);
+}
+
+.students-content .stat-value.success {
+    color: var(--color-success);
+}
+
+/* Students List */
+.students-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+}
+
+.student-card {
+    display: grid;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.student-header {
+    display: grid;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.student-avatar {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #D4A373 0%, #9F7554 100%);
+    border-radius: var(--radius-full);
+    font-size: 24px;
+}
+
+.student-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.student-name {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-800);
+}
+
+.student-id {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-500);
+}
+
+.halaqa-badge {
+    padding: var(--space-1) var(--space-3);
+    background-color: rgba(59, 130, 246, 0.1);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary);
+}
+
+.student-progress {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.progress-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+}
+
+.progress-value {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary);
+}
+
+.progress-bar-container {
+    height: 8px;
+    background-color: var(--color-gray-100);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--color-primary);
+    border-radius: var(--radius-full);
+    transition: width var(--transition-slow);
+}
+
+.attendance-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.attendance-badge {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: var(--font-size-sm);
+}
+
+.attendance-badge.good {
+    color: var(--color-success);
+}
+
+.attendance-badge.warning {
+    color: var(--color-warning);
+}
+
+.profile-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+}
+
+/* View All */
+.view-all-btn {
+    width: 100%;
+    padding: var(--space-4);
+    background-color: var(--color-white);
+    border: 2px dashed var(--color-gray-300);
+    border-radius: var(--radius-xl);
+    font-size: var(--font-size-base);
+    color: var(--color-gray-500);
+    cursor: pointer;
+    margin-bottom: var(--space-4);
+}
+
+/* FAB */
+.fab-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: var(--radius-full);
+    color: var(--color-white);
+    box-shadow: var(--shadow-lg);
+    cursor: pointer;
+}
