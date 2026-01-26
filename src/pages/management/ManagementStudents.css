@@ -147,7 +147,7 @@
 }
 
 .student-header {
-    display: grid;
+    display: flex;
     align-items: center;
     gap: var(--space-3);
 }

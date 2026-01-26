@@ -194,9 +194,9 @@ const TeacherRecords: React.FC = () => {
                 {/* Student List */}
                 <div className="student-section">
                     <h3 className="section-title">STUDENT (TALIB)</h3>
-                    <div className="student-list">
+                    <div className="t-student-list">
                         {filteredStudents.map((student) => (
-                            <Card key={student.id} className="student-card" padding="md">
+                            <Card key={student.id} className="t-student-card" padding="md">
                                 <div
                                     className="student-avatar"
                                     style={{
