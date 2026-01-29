@@ -18,7 +18,8 @@
         "success": "نجاح",
         "startUsingApp": "ابدأ استخدام التطبيق",
         "done": "تم",
-        "discard": "تجاهل"
+        "discard": "تجاهل",
+        "retry": "إعادة المحاولة"
     },
     "languages": {
         "english": "الإنجليزية",
@@ -117,7 +118,16 @@
         "inProgress": "قيد التنفيذ",
         "notStarted": "لم يبدأ",
         "noBookmarksYet": "لا توجد إشارات مرجعية بعد",
-        "noBookmarksHint": "اضغط على أيقونة الإشارة المرجعية في أي سورة لحفظها هنا للوصول السريع."
+        "noBookmarksHint": "اضغط على أيقونة الإشارة المرجعية في أي سورة لحفظها هنا للوصول السريع.",
+        "settings": "الإعدادات",
+        "fontSize": "حجم الخط",
+        "audioMode": "وضع الصوت",
+        "translation": "الترجمة",
+        "translationLanguage": "اللغة",
+        "reciter": "القاريء",
+        "previous": "السابق",
+        "next": "التالي",
+        "loadError": "فشل تحميل محتوى القرآن"
     },
     "quranSettings": {
         "title": "إعدادات القرآن",

@@ -18,7 +18,8 @@
         "success": "Nasarawa",
         "startUsingApp": "Fara amfani da App",
         "done": "An gama",
-        "discard": "Yar da shi"
+        "discard": "Yar da shi",
+        "retry": "Sake gwadawa"
     },
     "languages": {
         "english": "Turanci",
@@ -117,7 +118,16 @@
         "inProgress": "Ana kan yi",
         "notStarted": "Ba a fara ba",
         "noBookmarksYet": "Babu Alamu tukunna",
-        "noBookmarksHint": "Taɓa alamar kowace Surah don adana ta a nan don samun saurin shiga."
+        "noBookmarksHint": "Taɓa alamar kowace Surah don adana ta a nan don samun saurin shiga.",
+        "settings": "Saituna",
+        "fontSize": "Girman Rubutu",
+        "audioMode": "Yanayin Sauti",
+        "translation": "Fassara",
+        "translationLanguage": "Harshe",
+        "reciter": "Mai Karatu",
+        "previous": "Na baya",
+        "next": "Na gaba",
+        "loadError": "Ba a sami damar loda Alkur'ani ba"
     },
     "quranSettings": {
         "title": "Saitunan Alkur'ani",

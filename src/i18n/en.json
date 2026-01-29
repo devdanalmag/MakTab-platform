@@ -18,7 +18,8 @@
         "success": "Success",
         "startUsingApp": "Start Using App",
         "done": "Done",
-        "discard": "Discard"
+        "discard": "Discard",
+        "retry": "Retry"
     },
     "languages": {
         "english": "English",
@@ -117,7 +118,16 @@
         "inProgress": "In Progress",
         "notStarted": "Not Started",
         "noBookmarksYet": "No Bookmarks Yet",
-        "noBookmarksHint": "Tap the bookmark icon on any Surah to save it here for quick access."
+        "noBookmarksHint": "Tap the bookmark icon on any Surah to save it here for quick access.",
+        "settings": "Settings",
+        "fontSize": "Font Size",
+        "audioMode": "Audio Mode",
+        "translation": "Translation",
+        "translationLanguage": "Language",
+        "reciter": "Reciter",
+        "previous": "Previous",
+        "next": "Next",
+        "loadError": "Failed to load Quran content"
     },
     "quranSettings": {
         "title": "Quran Settings",

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Search, Play, Settings, Check, BookMarked, Bookmark } from 'lucide-react';
 import Card from '../components/common/Card';
@@ -29,6 +30,7 @@ interface JuzInfo {
 }
 
 const Quran: React.FC = () => {
+    const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState<TabType>('surah');
     const [showSettings, setShowSettings] = useState(false);
     const [bookmarks, setBookmarks] = useState<BookmarkType[]>([]);
@@ -43,10 +45,32 @@ const Quran: React.FC = () => {
 
     const currentProgress = {
         surah: 'Surah Al-Baqarah',
+        surahNumber: 2, // Al-Baqarah
         arabicName: 'سورة البقرة',
         juz: 3,
         ayah: 253,
         totalAyahs: 286,
+    };
+
+    // Navigation handlers
+    const handlePlayCurrentSurah = () => {
+        navigate(`/quran/surah/${currentProgress.surahNumber}?autoplay=true`);
+    };
+
+    const handleViewAllCurrentSurah = () => {
+        navigate(`/quran/surah/${currentProgress.surahNumber}`);
+    };
+
+    const handleSurahClick = (surahNumber: number) => {
+        navigate(`/quran/surah/${surahNumber}`);
+    };
+
+    const handleJuzClick = (juzNumber: number) => {
+        navigate(`/quran/juz/${juzNumber}`);
+    };
+
+    const handlePageClick = (pageNumber: number) => {
+        navigate(`/quran/page/${pageNumber}`);
     };
 
     const muraja = [
@@ -122,7 +146,12 @@ const Quran: React.FC = () => {
     const renderSurahList = () => (
         <div className="surah-list">
             {filteredSurahs.map((surah) => (
-                <Card key={surah.number} className="surah-card" padding="md">
+                <Card
+                    key={surah.number}
+                    className="surah-card clickable"
+                    padding="md"
+                    onClick={() => handleSurahClick(surah.number)}
+                >
                     <div className="surah-number">
                         <span>{surah.number}</span>
                     </div>
@@ -165,7 +194,12 @@ const Quran: React.FC = () => {
     const renderJuzList = () => (
         <div className="juz-list">
             {juzList.map((juz) => (
-                <Card key={juz.number} className="juz-card" padding="md">
+                <Card
+                    key={juz.number}
+                    className="juz-card clickable"
+                    padding="md"
+                    onClick={() => handleJuzClick(juz.number)}
+                >
                     <div className="juz-number">
                         <span>{juz.number}</span>
                     </div>
@@ -193,7 +227,12 @@ const Quran: React.FC = () => {
     const renderPageList = () => (
         <div className="page-grid">
             {pages.map((page) => (
-                <Card key={page.number} className="page-card" padding="sm">
+                <Card
+                    key={page.number}
+                    className="page-card clickable"
+                    padding="sm"
+                    onClick={() => handlePageClick(page.number)}
+                >
                     <span className="page-number">{page.number}</span>
                     <span className="page-surah">{page.surah}</span>
                     <span className="page-ayah">{t('surah.ayah')} {page.ayahStart}-{page.ayahEnd}</span>
@@ -293,7 +332,7 @@ const Quran: React.FC = () => {
                         <p className="surah-arabic">{currentProgress.arabicName}</p>
                     </div>
                     <div className="progress-row">
-                        <button className="play-btn">
+                        <button className="play-btn" onClick={handlePlayCurrentSurah}>
                             <Play size={18} fill="white" />
                         </button>
                         <div className="progress-info">
@@ -302,7 +341,9 @@ const Quran: React.FC = () => {
                                 <div className="progress-bar" style={{ width: `${progressPercent}%` }} />
                             </div>
                         </div>
-                        <span className="progress-total">{t('dashboard.viewAll')} {currentProgress.totalAyahs}</span>
+                        <button className="view-all-btn" onClick={handleViewAllCurrentSurah}>
+                            {t('dashboard.viewAll')}
+                        </button>
                     </div>
                 </Card>
 

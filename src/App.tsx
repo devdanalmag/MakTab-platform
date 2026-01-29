@@ -5,6 +5,7 @@ import RoleSelection from './pages/RoleSelection';
 import Auth from './pages/Auth';
 import Dashboard from './pages/Dashboard';
 import Quran from './pages/Quran';
+import QuranReader from './pages/QuranReader';
 import Classes from './pages/Classes';
 import Profile from './pages/Profile';
 import LogPractice from './pages/LogPractice';
@@ -41,6 +42,9 @@ const App: React.FC = () => {
                 {/* Student Routes */}
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/quran" element={<Quran />} />
+                <Route path="/quran/surah/:surahNumber" element={<QuranReader />} />
+                <Route path="/quran/page/:pageNumber" element={<QuranReader />} />
+                <Route path="/quran/juz/:juzNumber" element={<QuranReader />} />
                 <Route path="/classes" element={<Classes />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/log-practice" element={<LogPractice />} />
