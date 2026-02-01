@@ -778,6 +778,7 @@
 }
 
 .mute-btn {
+    display: none !important;
     width: 40px;
     height: 40px;
     display: flex;

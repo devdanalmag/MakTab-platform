@@ -672,7 +672,7 @@ const QuranReader: React.FC = () => {
 
                 {/* Mute Button */}
                 {audioEnabled && audioUrls.length > 0 && (
-                    <button className="mute-btn" onClick={() => setIsMuted(!isMuted)}>
+                    <button className="mute-btn" onClick={() => setIsMuted(!isMuted)} >
                         {isMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
                     </button>
                 )}
