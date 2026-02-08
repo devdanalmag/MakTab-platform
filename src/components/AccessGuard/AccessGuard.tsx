@@ -32,6 +32,7 @@ const AccessGuard: React.FC<AccessGuardProps> = ({ children }) => {
                 }
             }
             setIsVerified(true);
+return;
         };
 
         checkAccess();
