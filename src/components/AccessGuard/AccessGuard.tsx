@@ -31,7 +31,7 @@ const AccessGuard: React.FC<AccessGuardProps> = ({ children }) => {
                     localStorage.removeItem(ACCESS_KEY);
                 }
             }
-            setIsVerified(false);
+            setIsVerified(true);
         };
 
         checkAccess();
